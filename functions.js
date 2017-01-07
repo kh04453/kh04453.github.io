@@ -19,27 +19,27 @@ function onClick(element) {
 
 function cycleImages(id) {
 	if (id=="1") {
-		var src1="Images/1.jpg";
-		var src2="Images/2.jpg";
-		var src3="Images/3.jpg";
+		var src1="Images/1.JPG";
+		var src2="Images/2.JPG";
+		var src3="Images/3.JPG";
 		document.getElementById("imgGrid1").src = src1;
 		document.getElementById("imgGrid2").src = src2;
 		document.getElementById("imgGrid3").src = src3;
 		document.getElementById("imgGrid4").src = src3;
 	}
 	else if (id=="2") {
-		var src1="Images/4.jpg";
-		var src2="Images/5.jpg";
-		var src3="Images/6.jpg";
+		var src1="Images/4.JPG";
+		var src2="Images/5.JPG";
+		var src3="Images/6.JPG";
 		document.getElementById("imgGrid1").src = src1;
 		document.getElementById("imgGrid2").src = src2;
 		document.getElementById("imgGrid3").src = src3;
 		document.getElementById("imgGrid4").src = src3;
 	}
 	else {
-		var src1="Images/7.jpg";
-		var src2="Images/8.jpg";
-		var src3="Images/9.jpg";
+		var src1="Images/7.JPG";
+		var src2="Images/8.JPG";
+		var src3="Images/9.JPG";
 		document.getElementById("imgGrid1").src = src1;
 		document.getElementById("imgGrid2").src = src2;
 		document.getElementById("imgGrid3").src = src3;
