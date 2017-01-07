@@ -19,27 +19,27 @@ function onClick(element) {
 
 function cycleImages(id) {
 	if (id=="1") {
-		var src1="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/1.jpg";
-		var src2="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/2.jpg";
-		var src3="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/3.jpg";
+		var src1="Images"+"\\"+"Carolanne_Images/1.jpg";
+		var src2="Images"+"\\"+"Carolanne_Images/2.jpg";
+		var src3="Images"+"\\"+"Carolanne_Images/3.jpg";
 		document.getElementById("imgGrid1").src = src1;
 		document.getElementById("imgGrid2").src = src2;
 		document.getElementById("imgGrid3").src = src3;
 		document.getElementById("imgGrid4").src = src3;
 	}
 	else if (id=="2") {
-		var src1="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/4.jpg";
-		var src2="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/5.jpg";
-		var src3="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/6.jpg";
+		var src1="Images"+"\\"+"Carolanne_Images/4.jpg";
+		var src2="Images"+"\\"+"Carolanne_Images/5.jpg";
+		var src3="Images"+"\\"+"Carolanne_Images/6.jpg";
 		document.getElementById("imgGrid1").src = src1;
 		document.getElementById("imgGrid2").src = src2;
 		document.getElementById("imgGrid3").src = src3;
 		document.getElementById("imgGrid4").src = src3;
 	}
 	else {
-		var src1="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/7.jpg";
-		var src2="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/8.jpg";
-		var src3="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/9.jpg";
+		var src1="Images"+"\\"+"Carolanne_Images/7.jpg";
+		var src2="Images"+"\\"+"Carolanne_Images/8.jpg";
+		var src3="Images"+"\\"+"Carolanne_Images/9.jpg";
 		document.getElementById("imgGrid1").src = src1;
 		document.getElementById("imgGrid2").src = src2;
 		document.getElementById("imgGrid3").src = src3;
