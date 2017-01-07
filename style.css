@@ -4,6 +4,8 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 .gallery img{width:100%;height:550px;}
 .selfie {width: 280px; height: 500px; border-radius: 15%;}
 
+/*W3 Style*/
+
 /* W3.CSS 2.85 Jan 2017 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 /* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
