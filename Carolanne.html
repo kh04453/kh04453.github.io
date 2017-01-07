@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<title>Carolanne Alexander Horne</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+.gallery img{width:435px;height:550px;}
+.selfie {width: 280px; height: 500px; border-radius: 15%;}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidenav/menu -->
+<nav class="w3-sidenav w3-white w3-animate-left w3-center w3-text-grey w3-collapse w3-top" style="z-index:3;width:300px;font-weight:bold" id="mySidenav"><br>
+  <h3 class="w3-padding-64"><b>CAROLANNE<br>HORNE</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-padding">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-padding">ABOUT ME</a> 
+  <a href="#contact" onclick="w3_close()" class="w3-padding">CONTACT</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">CAROLANNE HORNE</span>
+  <a href="javascript:void(0)" class="w3-right w3-btn w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidenav on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row gallery">
+      <img id="imgGrid1" src="C:\Users\Y2560\Desktop\Carolanne_Images/1.jpg" onclick="onClick(this)" alt="">
+      <img id="imgGrid2" src="C:\Users\Y2560\Desktop\Carolanne_Images/2.jpg" onclick="onClick(this)" alt="">
+      <img id="imgGrid3" src="C:\Users\Y2560\Desktop\Carolanne_Images/3.jpg" onclick="onClick(this)" alt="">
+	  <img id="imgGrid4" src="C:\Users\Y2560\Desktop\Carolanne_Images/3.jpg" onclick="onClick(this)" alt="">
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <ul class="w3-pagination">
+      <li><a id="1" class="w3-hover-black" onclick="cycleImages(this.id)">1</a></li>
+      <li><a id="2" class="w3-hover-black" onclick="cycleImages(this.id)">2</a></li>
+      <li><a id="3" class="w3-hover-black" onclick="cycleImages(this.id)">3</a></li>
+    </ul>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black w3-padding-0" onclick="this.style.display='none'">
+    <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="C:\Users\Y2560\Desktop\Carolanne_Images/10.jpg" alt="Me" class="w3-image w3-padding-32 selfie" width="600" height="650">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h4>Carolanne Horne</h4>
+      <p>
+	  Bio Text
+      </p>
+      <p>mail: caalexan2@gmail.com</p>
+      <p>tel: 912-237-4659</p>
+      <hr class="w3-opacity">
+      <h4 class="w3-padding-16">Technical Skills</h4>
+      <p class="w3-wide">Baalayage</p>
+      <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:0%"></div>
+      </div>
+      <p class="w3-wide">Color</p>
+      <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:0%"></div>
+      </div>
+      <p class="w3-wide">Foils</p>
+      <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:0%"></div>
+      </div>
+	  <p class="w3-wide">Cutting</p>
+      <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:0%"></div>
+      </div>
+	  <p class="w3-wide">Texturizing</p>
+      <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:0%"></div>
+      </div>
+	  <p class="w3-wide">Styling</p>
+      <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:0%"></div>
+      </div>
+	  <p class="w3-wide">Extensions</p>
+      <div class="w3-progress-container">
+        <div class="w3-progressbar" style="width:0%"></div>
+      </div>
+      <p><a href="C:\Users\Y2560\Desktop/Hello.txt" download><button class="w3-btn w3-light-grey w3-padding-large w3-margin-top w3-margin-bottom w3-hover-black">Download Resume</button></a></p>
+      <hr class="w3-opacity">
+		<!-- 
+      <h4 class="w3-padding-16">How much I charge</h4>
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Option 1</li>
+            <li class="w3-padding-16">included 1</li>
+            <li class="w3-padding-16">included 2</li>
+            <li class="w3-padding-16">included 3</li>
+            <li class="w3-padding-16">included 4</li>
+            <li class="w3-padding-16">
+              <h2>$ 10</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-btn w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="w3-half">
+          <ul class="w3-ul w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-black w3-xlarge w3-padding-32">Option 2</li>
+            <li class="w3-padding-16">included 1</li>
+            <li class="w3-padding-16">included 2</li>
+            <li class="w3-padding-16">included 3</li>
+            <li class="w3-padding-16">included 4</li>
+            <li class="w3-padding-16">
+              <h2>$ 25</h2>
+              <span class="w3-opacity">per month</span>
+            </li>
+            <li class="w3-light-grey w3-padding-24">
+              <button class="w3-btn w3-white w3-padding-large w3-hover-black">Sign Up</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+	  !-->
+    </div>
+  </div>
+
+  <!-- Contact section 
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Contact Me</b></h4>
+      <form name="contactform" method="post" action="send_form_email.php">
+        <div class="w3-group">
+          <label>Name</label>
+          <input class="w3-input w3-border" type="text" name="Name" required>
+        </div>
+        <div class="w3-group">
+          <label>Email</label>
+          <input class="w3-input w3-border" type="text" name="Email" required>
+        </div>
+        <div class="w3-group">
+          <label>Message</label>
+          <input class="w3-input w3-border" type="text" name="Message" required>
+        </div>
+        <button type="submit" class="w3-btn-block w3-padding-large w3-black w3-margin-bottom">Send Message</button>
+      </form>
+    </div>
+  </div>-->
+  <form name="contactform" method="post" action="send_form_email.php">
+	<table width="450px">
+		<tr>
+			<td valign="top">
+				<label for="first_name">First Name *</label>
+			</td>
+			<td valign="top">
+				<input  type="text" name="first_name" maxlength="50" size="30">
+			</td>
+		</tr>
+ 
+		<tr>
+			<td valign="top"">
+				<label for="last_name">Last Name *</label>
+			</td>
+			<td valign="top">
+				<input  type="text" name="last_name" maxlength="50" size="30">
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<label for="email">Email Address *</label>
+			</td>
+			<td valign="top">
+				<input  type="text" name="email" maxlength="80" size="30">
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<label for="telephone">Telephone Number</label>
+			</td>
+			<td valign="top">
+				<input  type="text" name="telephone" maxlength="30" size="30">
+			</td>
+		</tr>
+		<tr>
+			<td valign="top">
+				<label for="comments">Comments *</label>
+			</td>
+			<td valign="top">
+				<textarea  name="comments" maxlength="1000" cols="25" rows="6"></textarea>
+			</td>
+		</tr> 
+		<tr>
+			<td colspan="2" style="text-align:center">
+				<input type="submit" value="Submit">
+			</td>
+		</tr>
+	</table>
+  </form>
+   
+  <footer class="w3-container w3-padding-32 w3-grey">  
+    <div class="w3-row-padding">
+	<!-- Footer
+      <div class="w3-third">
+        <h3>INFO</h3>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>      
+      </div>
+    
+      <div class="w3-third">
+        <h3>BLOG POSTS</h3>
+        <ul class="w3-ul">
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/workshop.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Lorem</span><br>
+            <span>Sed mattis nunc</span>
+          </li>
+          <li class="w3-padding-16 w3-hover-black">
+            <img src="/w3images/gondol.jpg" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">Ipsum</span><br>
+            <span>Praes tinci sed</span>
+          </li> 
+        </ul>
+      </div>
+
+      <div class="w3-third">
+        <h3>POPULAR TAGS</h3>
+        <p>
+          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">London</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">IKEA</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">NORWAY</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">DIY</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Baby</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Family</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">News</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Shopping</span>
+          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sports</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Games</span>
+        </p>-->
+		</footer>
+      </div>
+    </div>
+  
+  
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+function cycleImages(id) {
+	if (id=="1") {
+		var src1="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/1.jpg";
+		var src2="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/2.jpg";
+		var src3="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/3.jpg";
+		document.getElementById("imgGrid1").src = src1;
+		document.getElementById("imgGrid2").src = src2;
+		document.getElementById("imgGrid3").src = src3;
+		document.getElementById("imgGrid4").src = src3;
+	}
+	else if (id=="2") {
+		var src1="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/4.jpg";
+		var src2="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/5.jpg";
+		var src3="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/6.jpg";
+		document.getElementById("imgGrid1").src = src1;
+		document.getElementById("imgGrid2").src = src2;
+		document.getElementById("imgGrid3").src = src3;
+		document.getElementById("imgGrid4").src = src3;
+	}
+	else {
+		var src1="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/7.jpg";
+		var src2="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/8.jpg";
+		var src3="C:"+"\\"+"Users"+"\\"+"Y2560"+"\\"+"Desktop"+"\\"+"Carolanne_Images/9.jpg";
+		document.getElementById("imgGrid1").src = src1;
+		document.getElementById("imgGrid2").src = src2;
+		document.getElementById("imgGrid3").src = src3;
+		document.getElementById("imgGrid4").src = src3;
+	}
+
+}
+</script>
+
+
+</body>
+</html>
